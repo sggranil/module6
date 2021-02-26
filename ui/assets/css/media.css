@@ -1,0 +1,15 @@
+
+    @media only screen and (max-width: 960px) {
+        .navbar-content, .navbar-item {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .container {
+            width: 95% !important;
+        }
+
+        .form-response {
+            width: 100% !important;
+        }
+    }   

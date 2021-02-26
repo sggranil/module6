@@ -1,0 +1,28 @@
+{
+  "name": "module4",
+  "version": "1.0.0",
+  "description": "A contact tracing application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sggranil/module4.git"
+  },
+  "keywords": [
+    "contact",
+    "tracing",
+    "covid19"
+  ],
+  "author": "Simon Gerard Granil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sggranil/module4/issues"
+  },
+  "homepage": "https://github.com/sggranil/module4#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}

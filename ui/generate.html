@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/template.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="navbar-content">
+
+            <a id="menuButton"><i class="fas fa-bars"></i></a>
+
+            <div class="navbar-item">
+                <h4>Generate QR Code</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <div class="nav-brand">
+            <a href="/">EasyTrace</a>
+        </div>
+        <a href="scan.html">Scan</a>
+        <a href="generate.html">Generate</a>
+        <a href="tables.html">Tables</a>
+    </div>
+
+    <script>
+        let navigation = document.querySelector('.navigation');
+        let container = document.querySelector('.navbar');
+        let menu = document.getElementById('menuButton');
+    
+        menu.addEventListener('click', () => {
+            navigation.style.width = '200px';
+        });
+
+        window.onclick = function(event) {
+            if(!container.contains(event.target)) {
+                navigation.style.width = '0px';
+            }
+        };
+    </script>
+
+    <div class="container w-50">
+        <div class="row">
+            
+            <form action="form-content">
+                <input class="form-input" type="text" id="names" placeholder="Full Name" required>
+                <input class="form-input" type="text" placeholder="Address" required>
+                <input class="form-input" type="text" placeholder="Contact No." required>
+                <input class="form-input" type="text" id="organization" placeholder="Organization" required>
+                <input disabled class="btn bg-primary border-sm-rounded justify-items-center" type="submit" id="generate" value="Register and Generate">
+            </form>
+
+            <div class="container">
+                <div class="border-sm-rounded border-secondary">
+                    <img id="qrCode" class="justify-items-center" src="assets/img/qr.png">
+                    <p class="text-grey" id="message" style="text-align: center;">QR Code will appear here</p>
+                </div>
+
+                <button class="justify-items-center btn bg-primary border-sm-rounded" id="save" disabled>Save to Gallery</button>
+                
+                <input class="form-input" type="text" id="count" placeholder="Insert comment and press Enter">
+
+                <h4>User Comments</h4>
+                <p class="border-sm-rounded border-secondary p-1 text-grey my-1" id="commentList">Comments will appear here...</p>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let generate = document.getElementById('generate');
+        let qr = document.getElementById('qrCode');
+        let input = document.querySelector('#organization');
+        let name = document.getElementById('names');
+        let save = document.querySelector('#save');
+        let message = document.getElementById('message');
+
+        input.addEventListener('keyup', () => {
+            if(input.value.length > 10) { 
+                generate.disabled = false 
+            }
+        });
+
+        generate.addEventListener('click', () => {
+            if(generate.disabled = false) {
+                qr.style.display = "none";
+                save.disabled = true;
+            } else {
+                qr.style.display = "block";
+                save.disabled = false;
+            }
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/6151fd81d3.js" crossorigin="anonymous"></script>
+    <script src="../server.js"></script>
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>

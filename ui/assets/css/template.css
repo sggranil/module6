@@ -1,0 +1,203 @@
+
+
+    /* margin */
+
+    .mx-1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .my-1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } 
+
+    /* padding */
+
+    .p-1 {
+        padding: 10px;
+    }
+
+    .p-2 {
+        padding: 20px;
+    }
+
+    .p-3 {
+        padding: 30px;
+    }
+
+    /* width */
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .w-50 {
+        width: 50%;
+    }
+
+    .w-25 {
+        width: 25%;
+    }
+
+    /* justify items */
+
+    .justify-items-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    /* button */
+
+    .btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: whitesmoke;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px 15px;
+        transition: .2s ease;
+    }
+
+    .btn:disabled {
+        background-color: #808080;
+        filter: brightness(120%);
+    }
+
+    /* border configuration */
+
+    .border-sm-rounded {
+        border: 0.2px;
+        border-radius: 5px;
+    }
+
+    .border-md-rounded {
+        border: 0.5px;
+        border-radius: 5px;
+    }
+
+    .border-lg-rounded {
+        border: 0.7px;
+        border-radius: 5px;
+    }
+
+    .border-xl-rounded {
+        border: 0.9px;
+        border-radius: 5px;
+    }
+
+    /* border color */
+
+    .border-primary {
+        border: solid rgb(255, 81, 0);
+    }
+
+    .border-secondary {
+        border: solid #808080;
+    }
+
+    /* background */
+
+    .bg-primary {
+        background-color: rgb(255, 81, 0);
+    }
+
+    .bg-primary:hover {
+        background-color: rgb(199, 63, 0);
+        transition: .2s ease;
+    }
+
+    .bg-secondary {
+        background-color: #808080;
+    }
+
+    .bg-secondary:hover {
+        background-color: #696969;
+        transition: .2s ease;
+    }
+
+    /* text size */
+
+    .text-sm {
+        font-size: 12px;
+    }
+
+    .text-md {
+        font-size: 16px;
+    }
+
+    .text-lg {
+        font-size: 20px;
+    }
+
+    .text-lg {
+        font-size: 24px;
+    }
+
+    /* text color */
+    
+    .text-dark {
+        color: rgb(29, 29, 29);
+    }
+
+    .text-grey {
+        color: #808080;
+    }
+
+    /* text weight */
+
+    .text-weight-sm {
+        font-weight: 200;
+    }
+
+    .text-weight-md {
+        font-weight: 400;
+    }
+
+    .text-weight-lg {
+        font-weight: 500;
+    }
+
+    .text-weight-xl {
+        font-weight: 700;
+    }
+
+    /* form */
+
+    .form-input {
+        border: .5px solid #808080;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        width: 95%;
+    }
+
+    .form-response {
+        width: 100%;
+    }    
+
+    .form-content {
+        padding: 20px;
+    }
+
+    /* content */
+
+    .container {
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+        top: 50px;
+        transition: .2s ease;
+    }
+
+    .row {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        transition: .2s ease;
+    }
